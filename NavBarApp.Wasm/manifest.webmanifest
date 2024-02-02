@@ -1,0 +1,10 @@
+{
+  "background_color": "#ffffff",
+  "description": "NavBarApp",
+  "display": "standalone",
+  "name": "NavBarApp",
+  "short_name": "NavBarApp",
+  "start_url": "/index.html",
+  "theme_color": "#ffffff",
+  "scope": "/"
+}

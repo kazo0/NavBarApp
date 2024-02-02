@@ -1,0 +1,30 @@
+﻿<Page x:Class="NavBarApp.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:NavBarApp"
+      xmlns:utu="using:Uno.Toolkit.UI"
+      xmlns:um="using:Uno.Material"
+      Background="{ThemeResource BackgroundBrush}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <utu:NavigationBar Content="First Page"
+                           MainCommandMode="Action">
+            <utu:NavigationBar.MainCommand>
+                <AppBarButton>
+                    <AppBarButton.Icon>
+                        <BitmapIcon UriSource="ms-appx:///NavBarApp/Assets/Icons/burger.png" />
+                    </AppBarButton.Icon>
+                </AppBarButton>
+            </utu:NavigationBar.MainCommand>
+        </utu:NavigationBar>
+        <Button Grid.Row="1"
+                Margin="16"
+                Click="NavBtn_Click"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Content="Go to Second Page" />
+    </Grid>
+</Page>
