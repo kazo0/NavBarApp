@@ -10,7 +10,7 @@
             <RowDefinition Height="Auto" />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <utu:NavigationBar Content="First Page" Background="Tomato">
+        <utu:NavigationBar Content="First Page">
             <utu:NavigationBar.PrimaryCommands>
                 <AppBarButton>
                     <AppBarButton.Icon>
