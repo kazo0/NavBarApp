@@ -15,12 +15,12 @@
         </Grid.RowDefinitions>
         <utu:NavigationBar Content="Second Page">
             <utu:NavigationBar.PrimaryCommands>
-                <AppBarButton>
+                <AppBarButton Click="Notification_Click">
                     <AppBarButton.Icon>
                         <BitmapIcon UriSource="ms-appx:///NavBarApp/Assets/Icons/notifications.png" />
                     </AppBarButton.Icon>
                 </AppBarButton>
-                <AppBarButton>
+                <AppBarButton Click="Share_Click">
                     <AppBarButton.Icon>
                         <BitmapIcon UriSource="ms-appx:///NavBarApp/Assets/Icons/share.png" />
                     </AppBarButton.Icon>
@@ -32,6 +32,11 @@
                Height="200"
                Margin="16"
                VerticalAlignment="Top"
-               Source="ms-appx:///NavBarApp/Assets/Images/steve.png" />
+               RenderTransformOrigin="0.5,0.5"
+               Source="ms-appx:///NavBarApp/Assets/Images/steve.png">
+            <Image.RenderTransform>
+                <RotateTransform x:Name="myRotate" />
+            </Image.RenderTransform>
+        </Image>
     </Grid>
 </Page>

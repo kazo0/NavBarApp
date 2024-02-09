@@ -8,16 +8,18 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <RowDefinition />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <utu:NavigationBar Content="First Page">
             <utu:NavigationBar.PrimaryCommands>
-                <AppBarButton>
+                <AppBarButton Click="Notification_Click">
                     <AppBarButton.Icon>
                         <BitmapIcon UriSource="ms-appx:///NavBarApp/Assets/Icons/notifications.png" />
                     </AppBarButton.Icon>
                 </AppBarButton>
-                <AppBarButton>
+                <AppBarButton Click="Share_Click">
                     <AppBarButton.Icon>
                         <BitmapIcon UriSource="ms-appx:///NavBarApp/Assets/Icons/share.png" />
                     </AppBarButton.Icon>
@@ -30,5 +32,23 @@
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"
                 Content="Go to Second Page" />
+
+        <TextBlock Grid.Row="2"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Text="Notification Clicked: ">
+                   <TextBlock.Inlines>
+                          <Run x:Name="NotifCountRun" />
+                    </TextBlock.Inlines>
+        </TextBlock>
+
+        <TextBlock Grid.Row="3"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Text="Share Clicked: ">
+                   <TextBlock.Inlines>
+                          <Run x:Name="ShareCountRun" />
+                    </TextBlock.Inlines>
+        </TextBlock>
     </Grid>
 </Page>
