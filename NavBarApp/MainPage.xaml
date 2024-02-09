@@ -15,8 +15,14 @@
             <utu:NavigationBar.MainCommand>
                 <AppBarButton>
                     <AppBarButton.Icon>
-                        <BitmapIcon UriSource="ms-appx:///Assets/Icons/burger.png" />
+                        <BitmapIcon UriSource="ms-appx:///NavBarApp/Assets/Icons/burger.png" />
                     </AppBarButton.Icon>
+                    <AppBarButton.Flyout>
+                        <MenuFlyout>
+                            <MenuFlyoutItem Text="First Item" />
+                            <MenuFlyoutItem Text="Second Item" />
+                        </MenuFlyout>
+                    </AppBarButton.Flyout>
                 </AppBarButton>
             </utu:NavigationBar.MainCommand>
         </utu:NavigationBar>
