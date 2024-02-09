@@ -10,19 +10,15 @@
             <RowDefinition Height="Auto" />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <utu:NavigationBar Content="First Page">
-            <utu:NavigationBar.PrimaryCommands>
+        <utu:NavigationBar Content="First Page"
+                           MainCommandMode="Action">
+            <utu:NavigationBar.MainCommand>
                 <AppBarButton>
                     <AppBarButton.Icon>
-                        <BitmapIcon UriSource="ms-appx:///NavBarApp/Assets/Icons/notifications.png" />
+                        <BitmapIcon UriSource="ms-appx:///Assets/Icons/burger.png" />
                     </AppBarButton.Icon>
                 </AppBarButton>
-                <AppBarButton>
-                    <AppBarButton.Icon>
-                        <BitmapIcon UriSource="ms-appx:///NavBarApp/Assets/Icons/share.png" />
-                    </AppBarButton.Icon>
-                </AppBarButton>
-            </utu:NavigationBar.PrimaryCommands>
+            </utu:NavigationBar.MainCommand>
         </utu:NavigationBar>
         <Button Grid.Row="1"
                 Margin="16"
